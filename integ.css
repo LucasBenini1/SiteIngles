@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+body{
+    background-color: #50543c;
+    color: #dfdfdfea;
+}
+.pessoas{
+    margin: 4% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: justify;
+    hyphens: auto;
+}
+.pessoas h2{
+    margin-left: 1%;
+    font-size: 28px;
+}
+.pessoas p{
+    font-size: 20px;
+    margin: 0 2%;
+}
+#leader{
+    color: #139cea;
+    font-size: 14px;
+    margin-left: 5px;
+}
+/* Botões de ação */
+#botoesDiv {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#botoesDiv.active {
+    opacity: 1;
+}
+
+.botoes {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.botao {
+    padding: 5px;
+    border: 2px solid #787e5c;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    background-color: #939684;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    background-color: #dfdfdfea;
+    color: #50543c;
+    transform: scale(1.03);
+}
+
+/* Ícone de menu */
+.menuSpans {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu {
+    width: 30px;
+    height: 3px;
+    background-color: #dfdfdfea;
+    display: flex;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+/* Transformação de menu para "X" */
+.menuSpans.active span:nth-child(1) {
+    transform: translateY(2px) rotate(45deg);
+}
+
+.menuSpans.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menuSpans.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+@media (max-width: 900px){
+    h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #victor{
+        margin-bottom: 50px;
+    }
+    .leaderCont{
+        display: flex;
+        flex-direction: column;
+    }
+    #leader{
+        display: block;
+    }
+}

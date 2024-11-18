@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  body{
+    background-color: #50543c;
+    opacity: 0;
+    transition: 2s;
+  }
+header{
+    height: 100vh;
+    width: 100%;
+    background-color: #50543c;
+}
+.imageContainer{
+    height: 60vh;
+    width: 50%;
+    margin: 5% 2%;
+}
+img{
+    margin-bottom: 70px;
+}
+#para{
+    text-align: center;
+    hyphens: auto;
+}
+#italicText{
+    color: #dfdfdfea;
+    font-size: 22px;
+}
+#mobileHr{
+    display: none;
+}
+#animatedHr{
+   background-color: #8e9669b0;
+   margin: 30px 0;
+   width: 2px;
+   height: 90vh;
+   border: none;
+}
+
+.containerHeader{
+    display: flex;
+}
+.container-rightHeader{
+    text-align: justify;
+    margin: 12% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #dfdfdfea;
+}
+#tituloInicial{
+    text-align: center;
+    font-size: 35px;
+    hyphens: auto;
+}
+#tema{
+    margin-left: 5%;
+    font-size: 32px;
+}
+#textoInicial{
+    font-size: 23px;
+    hyphens: auto;
+}
+.botoes{
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+.botao{
+    padding: 5px;
+    border: 2px solid #787e5c;
+    border-radius: 4px;
+    width: 220px;
+    cursor: pointer;
+    background-color: #939684;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.botao:hover{
+    background-color: #dfdfdfea;
+    color: #50543c;
+    transform: scale(1.03);
+}
+
+@media (max-width: 900px){
+    body {
+        overflow-x: hidden;
+    }
+    .imageContainer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    #imagem {
+        display: block;
+        margin: 0 auto;
+        border: 5px solid silver;
+        border-radius: 50%;
+    }
+    .containerHeader{
+        display: flex;
+        flex-direction: column;
+    }
+    #tituloInicial {
+        font-size: 25px;
+    }
+    #tema {
+        font-size: 23px;
+        text-align: left;
+        margin: 0 10%;
+    }
+    #textoInicial {
+        font-size: 20px;
+        margin: 0 5%;
+        text-align: justify;
+    }
+    .botoes {
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .botao {
+        width: 100%;
+        font-size: 19px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #italicText {
+        display: block;
+        margin-top: 5%;
+    }
+    #animatedHr {
+        display: none;
+    }
+    #mobileHr {
+        display: block;
+        transform: rotate(180deg);
+        width: 200px;
+        height: 2px;
+        margin: 0 auto;
+        background-color: #dfdfdfea;
+    }
+}

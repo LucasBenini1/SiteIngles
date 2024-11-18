@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="integ.css">
+    <title>Integrantes</title>
+</head>
+<body class="poppins-light">
+    <div class="container">
+        <div id="lucas" class="pessoas">
+            <h2>Lucas Benini de Andrade</h2>
+            <p>My name is Lucas Benini de Andrade, and I am a 21-year-old Information Systems student at Anhembi Morumbi University. I was born in São Paulo and spent part of my childhood in São Caetano do Sul until I moved back to São Paulo at age ten, where I still live today.
+                I chose to pursue a career in Front-End development because I have always had a natural skill with computers and programming, along with a creative side that I enjoy applying to my work. Right now, I'm focused on my studies and freelance projects to grow my skills, but I'm looking forward to starting a professional career at a company soon.</p>
+        </div>
+        <div id="matheus" class="pessoas">
+            <h2>Matheus Pereira da Silva</h2>
+            <p>My name is Matheus Pereira da Silva, I'm 20 years old, currently studying Physical Education (bachelor's degree) at Universidade Potiguar do Rio Grande do Norte. I was born on November 9, 2004, in the city of Macaé in the state of Rio de Janeiro, at the age of one and a half my family and I moved to the city of Itapecerica da Serra in the state of São Paulo, where I started my I studied early, since I was little I've been passionate about sports and exercise, this was the basis for deciding what direction I wanted to take in my life today. When I was 11 years old, my family planned to take a trip to the city where my parents and family were born in Natal, Rio Grande do Norte, at first it was just a holiday trip at the end of the year, which was 2015, but at that time we had the idea of live here, where I still live today, where I finished my elementary school studies and where I completed my high school education. Soon after finishing my studies, I got a place at the school of science and technology at the federal university of Rio Grande do Norte, where I spent a little time, I felt inside me that it wasn't what I wanted for my future life, that's when I chose enroll in the private college where I currently study. Concluding this brief biography of my life, today I continue to study, doing the things I love, promoting health and leisure for many people.</p>
+        </div>
+        <div id="aron" class="pessoas">
+            <div class="leaderCont"><h2>Aron Uliani dos Santos <span id="leader">Leader</span></h2></div>
+            <p>My name is Aron Uliani dos Santos, I'm 19 years old and I'm currently studying Computer Science at Anhembi Morumbi University. I was born in São Paulo, and I studied at Recriarte and Avanço schools. I am currently a teacher and teach at a gym. I'm quite busy, but I try to measure and set aside my time for things. I'm also studying Music Theory to join my church's orchestra. I still don't have a completely clear objective, but I'm already looking for an internship at a bank.</p>
+        </div>
+        <div id="ali" class="pessoas">
+            <h2>Ali Osman Erbil</h2>
+            <p>I am Ali Osman Erbil. I was born on May 29, 2005 in Şanlı Urfa, Turkey. I grew up in Turkey until I was 12. In 2017, I moved to Brazil with my family. I finished high school at colégio belo futuro internacional and I am currently studying computer science at Anhembi Morumbi.</p>
+        </div>
+        <div id="jonatas" class="pessoas">
+            <h2>Jonathas Souza</h2>
+            <p>My name is Jonathas, I am 36 years old, I was born in the city of Natal-RN, and I served 8 years in the Brazilian army, in the special forces platoon (Pelopes) of the 7th combat engineering battalion in the city of Natal, from 2007 to 2015. In 2012, I was assigned to the 16th contingent of the peacekeeping force in Haiti, to assist in the pacification of the country, where I was decorated with the United Nations (UNO) medal, for the various missions I carried out, including the border patrol task force with the Dominican Republic and rescues and injuries during Hurricane Sandy. During my military career, I discovered the adventure sport called orienteering, in which I am still active, organizing and participating in competitions. My best result was in 2016, when I participated in the South American Championship in Chile, in the cities of Valparaíso and Santiago, where I obtained third place. I am currently a student of the bachelor's degree in pharmacy at the Universidade Potiguar (UNP).</p>
+        </div>
+        <div id="ryan" class="pessoas">
+            <h2>Ryan Rodrigo de Souza Silva</h2>
+            <p>My name is Ryan Rodrigo de Souza Silva, I'm 20 years old, I'm a Computer Science student at Anhembi Morumbi University, I was born in São Paulo and I have interest in everything technological. I am good at solving problems and being creative and logical at the same time. 
+                I am good with Software concepts and some program languages, I'm still learning as many programming languages as i can.</p>
+        </div>
+        <div id="victor" class="pessoas">
+            <h2>Victor Batista Murbach da Encarnação</h2>
+            <p>My name is Victor Batista Murbach da Encarnação, I'm 20 years old, I'm a Computer Science student at Anhembi Morumbi University, interested in technology in all its aspects. I have skills in problem solving and analytical thinking, combining logic with creativity. 
+                Throughout my training, I acquired a solid foundation in Hardware and Software concepts, and I am in the initial phase of studying several programming languages.</p>
+        </div>
+    </div><!--Container-->
+    <div class="botoes">
+        <div class="menuSpans" id="btn">
+            <span class="menu"></span>
+            <span class="menu"></span>
+            <span class="menu"></span>
+        </div>
+
+        <div id="botoesDiv">
+            <button class="botao" id="init">Initial Page</button>
+            <button class="botao" id="cont">Content Page</button>
+        </div>
+    </div>
+
+    <script>
+                    document.getElementById("btn").addEventListener("click", function () {
+            this.classList.toggle('active');
+            document.getElementById("botoesDiv").classList.toggle("active");
+            });
+
+            document.getElementById("init").addEventListener("click", () => {
+                window.location.href = "index.html"
+            })
+            document.getElementById("cont").addEventListener("click", () => {
+                window.location.href = "content.html"
+            })
+    </script>
+</body>
+</html>
+

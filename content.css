@@ -1,0 +1,182 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #50543c;
+}
+
+/* Fonte */
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Logo */
+#logo {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 1;
+}
+
+/* Container principal */
+.container {
+    margin-top: 5%;
+}
+
+/* Título */
+#title {
+    color: #dfdfdfea;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Seções temáticas */
+.themeDiv {
+    color: #dfdfdfea;
+    transition: 1s;
+}
+
+.unappear {
+    display: none;
+}
+
+.appear {
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Título da seção */
+h3 {
+    margin: 2% 3%;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    z-index: 10;
+    user-select: none;
+    padding-left: 20px;
+}
+
+h3:hover {
+    background-color: rgb(201, 201, 201);
+    color: #50543c;
+}
+
+h3:active {
+    border: 2px solid white;
+}
+
+/* Parágrafos */
+p {
+    margin: 0 5%;
+    font-size: 19px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.itens {
+    margin: 0 7%;
+    text-align: justify;
+    font-size: 19px;
+    margin-top: 1%;
+    hyphens: auto;
+}
+
+/* Botões de ação */
+#botoesDiv {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#botoesDiv.active {
+    opacity: 1;
+}
+
+.botoes {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.botao {
+    padding: 5px;
+    border: 2px solid #787e5c;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    background-color: #939684;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    background-color: #dfdfdfea;
+    color: #50543c;
+    transform: scale(1.03);
+}
+
+/* Título do item */
+.itemTitle {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Ícone de menu */
+.menuSpans {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu {
+    width: 30px;
+    height: 3px;
+    background-color: #dfdfdfea;
+    display: flex;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+/* Transformação de menu para "X" */
+.menuSpans.active span:nth-child(1) {
+    transform: translateY(2px) rotate(45deg);
+}
+
+.menuSpans.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menuSpans.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+@media (max-width: 400px){
+    #logo{
+        display: none;
+    }
+    #lastDiv{
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 900px){
+    .botao{
+        font-size: 17px;
+        width: fit-content;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
